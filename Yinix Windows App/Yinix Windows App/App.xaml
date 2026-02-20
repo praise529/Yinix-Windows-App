@@ -28,6 +28,13 @@
                 <Setter Property="BorderThickness" Value="3"></Setter>
                 <Setter Property="FontWeight" Value="SemiBold"></Setter>
             </Style>
+            <Style TargetType="Button" x:Key="No-BG-Button">
+                <Setter Property="Padding" Value="25,10,25,10"></Setter>
+                <Setter Property="CornerRadius" Value="20"></Setter>
+                <Setter Property="Background" Value="Transparent"></Setter>
+                <Setter Property="BorderThickness" Value="0"></Setter>
+                <Setter Property="FontWeight" Value="SemiBold"></Setter>
+            </Style>
 
             <Style TargetType="TextBox">
                 <Setter Property="Padding" Value="20,15,15,15"></Setter>
@@ -41,13 +48,11 @@
             <Style TargetType="StackPanel"  x:Key="Outline">
                 <Setter Property="BorderBrush" Value="#00091a"></Setter>
                 <Setter Property="BorderThickness" Value="3"></Setter>
-                <Setter Property="Padding" Value="30"></Setter>
                 <Setter Property="CornerRadius" Value="20"></Setter>
             </Style>
             <Style TargetType="StackPanel" x:Key="Outline-Light">
                 <Setter Property="BorderBrush" Value="#e0e0e0"></Setter>
                 <Setter Property="BorderThickness" Value="3"></Setter>
-                <Setter Property="Padding" Value="20"></Setter>
                 <Setter Property="CornerRadius" Value="20"></Setter>
                 <Setter Property="Background" Value="#FAFAFA"></Setter>
             </Style>
@@ -59,14 +64,34 @@
                 <Setter Property="VerticalAlignment" Value="Center"></Setter>
             </Style>
             <Style TargetType="Image" x:Key="Navbar-Icon">
-                <Setter Property="Height" Value="40"></Setter>
+                <Setter Property="Height" Value="30"></Setter>
             </Style>
-            <Style TargetType="StackPanel" x:Key="Navbar-Item">
-                <Setter Property="Padding" Value="20"></Setter>
+            <Style TargetType="Button" x:Key="Navbar-Item">
+                <Setter Property="Padding" Value="15"></Setter>
+                <Setter Property="Width" Value="180"></Setter>
+                <Setter Property="CornerRadius" Value="32"></Setter>
+                <Setter Property="Margin" Value="10"></Setter>
+                <Setter Property="Background" Value="Transparent"></Setter>
+                <Setter Property="BorderThickness" Value="0"></Setter>
                 <Setter Property="HorizontalAlignment" Value="Left"></Setter>
-                <Setter Property="Orientation" Value="Horizontal"></Setter>
-                <Setter Property="Spacing" Value="10"></Setter>
                 <!--<Setter Property="" Value=""></Setter>-->
+            </Style>
+            
+            <Style TargetType="Button" x:Key="Navbar-Item-Active">
+                <Setter Property="Padding" Value="15"></Setter>
+                <Setter Property="Width" Value="180"></Setter>
+                <Setter Property="Margin" Value="10"></Setter>
+                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                <Setter Property="Background" Value="#e5eeff"></Setter>
+                <Setter Property="BorderThickness" Value="0"></Setter>
+                <Setter Property="CornerRadius" Value="32"></Setter>
+            </Style>
+
+
+
+            <Style TargetType="TextBlock" x:Key="Title">
+                <Setter Property="FontWeight" Value="Bold"></Setter>
+                <Setter Property="FontSize" Value="32"></Setter>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

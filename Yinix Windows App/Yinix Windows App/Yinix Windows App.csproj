@@ -16,6 +16,8 @@
     <None Remove="Classroom.xaml" />
     <None Remove="MainPage.xaml" />
     <None Remove="People.xaml" />
+    <None Remove="Settings.xaml" />
+    <None Remove="SideBar.xaml" />
     <None Remove="Tools.xaml" />
     <None Remove="Your Work.xaml" />
   </ItemGroup>
@@ -44,6 +46,18 @@
   <ItemGroup>
     <Folder Include="Assets\NewFolder\" />
     <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="SideBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Settings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <ItemGroup>
