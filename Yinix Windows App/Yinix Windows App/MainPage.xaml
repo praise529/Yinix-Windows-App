@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Yinix_Windows_App.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Yinix_Windows_App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <StackPanel Style="{StaticResource Outline}" Width="200"
+        x:Name="YinixNavBar" HorizontalAlignment="Left"
+        BorderThickness="0,0,3,0"
+         CornerRadius="0">
+            <StackPanel x:Name="NavBarHome" Style="{StaticResource Navbar-Item}">
+                <Image Source="/Assets/Icons/house-simple-bold.svg" Style="{StaticResource Navbar-Icon}" />
+                <TextBlock Style="{StaticResource Navbar-Label}">Home</TextBlock>
+            </StackPanel>
+            
+            <StackPanel x:Name="NavBarWork" Style="{StaticResource Navbar-Item}">
+                <Image Source="/Assets/Icons/clipboard-text-bold.svg" Style="{StaticResource Navbar-Icon}" />
+                <TextBlock Style="{StaticResource Navbar-Label}" VerticalAlignment="Center">Work</TextBlock>
+            </StackPanel>
+            
+            <StackPanel x:Name="NavBarSettings" Style="{StaticResource Navbar-Item}">
+                <Image Source="/Assets/Icons/gear-six-bold.svg" Style="{StaticResource Navbar-Icon}" />
+                <TextBlock Style="{StaticResource Navbar-Label}" VerticalAlignment="Center">Settings</TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
