@@ -8,8 +8,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="White">
-        <StackPanel Style="{StaticResource Outline-Light}" Width="230"
+    <Grid Background="#f6f7f9">
+        <!-- Side Bar -->
+        <StackPanel Style="{StaticResource Outline}" Width="230"
 x:Name="YinixNavBar" HorizontalAlignment="Left"
 BorderThickness="0,0,3,0" Padding="10,30,10,10"
  CornerRadius="0">
@@ -34,7 +35,9 @@ BorderThickness="0,0,3,0" Padding="10,30,10,10"
                 </StackPanel>
             </Button>
         </StackPanel>
-        <StackPanel Style="{StaticResource Outline-Light}" Canvas.ZIndex="-1" Height="100" VerticalAlignment="Top"
+        
+        <!-- Top Bar -->
+        <StackPanel Style="{StaticResource Outline}" Canvas.ZIndex="-1" Height="100" VerticalAlignment="Top"
 BorderThickness="0,0,0,2" CornerRadius="0" HorizontalAlignment="Stretch">
             <StackPanel HorizontalAlignment="Right" Margin="0,27,20,0" VerticalAlignment="Center"
     Orientation="Horizontal">
@@ -44,14 +47,15 @@ BorderThickness="0,0,0,2" CornerRadius="0" HorizontalAlignment="Stretch">
                         <TextBlock Margin="9,0,0,0">Back</TextBlock>
                     </StackPanel>
                 </Button>
-                
                 <Button Style="{StaticResource No-BG-Button}">
-                        <Image Source="/Assets/Icons/list-bold.svg" Height="20"></Image>
+                    <Image Source="/Assets/Icons/list-bold.svg" Height="20"></Image>
                 </Button>
                 <PersonPicture Initials="PO" Width="36"></PersonPicture>
             </StackPanel>
         </StackPanel>
 
+        
+        <!-- Main Content -->
         <StackPanel x:Name="MainContent" Margin="270,150,0,0" Orientation="Vertical"
         Spacing="20">
             <RelativePanel>
@@ -63,6 +67,9 @@ BorderThickness="0,0,0,2" CornerRadius="0" HorizontalAlignment="Stretch">
                 <PersonPicture Initials="PO" Width="36"></PersonPicture>
                 <TextBlock Margin="50,8,0,0">Praise Olatope</TextBlock>
             </RelativePanel>
+
+            <Button>Hi</Button>
+            <Button Style="{StaticResource White-Button}">Hi</Button>
         </StackPanel>
     </Grid>
 </Page>

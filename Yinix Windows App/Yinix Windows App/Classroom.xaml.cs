@@ -12,6 +12,9 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using Windows.UI.Notifications;
+using Microsoft.Windows.AppNotifications;
+using Microsoft.Windows.AppNotifications.Builder;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -21,13 +24,13 @@ namespace Yinix_Windows_App;
 /// <summary>
 /// An empty page that can be used on its own or navigated to within a Frame.
 /// </summary>
-public sealed partial class MainPage : Page
+public sealed partial class Classroom : Page
 {
-    public MainPage()
+    public Classroom()
     {
         InitializeComponent();
     }
-    
+
     private void Navigate_Back(object sender, RoutedEventArgs e)
     {
         if (this.Frame.CanGoBack)
@@ -44,8 +47,14 @@ public sealed partial class MainPage : Page
         Frame.Navigate(typeof(MainPage));
     }
 
-    private void NavigateToClassroom(object sender, RoutedEventArgs e)
+
+    private void SubmitAnnouncement(object sender, RoutedEventArgs e)
     {
-        Frame.Navigate(typeof(Classroom));
+        string AnnouncementText = AnnouncementTextBox.PlaceholderText;
+        AppNotification Notification = new AppNotificationBuilder()
+            .AddText("Yinix Announcement")
+            .AddText(AnnouncementText)
+            .BuildNotification();
+        AppNotificationManager.Default.Show(Notification);
     }
 }

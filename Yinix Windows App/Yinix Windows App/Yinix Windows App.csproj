@@ -49,6 +49,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Update="Classroom.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
     <Page Update="SideBar.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
